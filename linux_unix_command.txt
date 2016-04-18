@@ -1,0 +1,36 @@
+LINUX COMMAND:
+
+ln -s <from_path> <to_path> : Create symbolink 
+
+GIT COMMAND:
+
+ssh-keygen : Create new ssh 
+ssh-add <id_rsa.pub path> : Add current ssh id to ssh-agent
+ssh-add -l : View ssh setup in ssh-agent status 
+ssh -T git@github.com : Test ssh connect to github
+
+git config --global user.name "new_name" : set git user name info
+git config --global user.email "new_email" : set git user email info
+git config --global alias.<new_alias> <git_command> : set customize alias for git command
+git config --global --unset <git_variable> : remove variable of git info
+git config -l : View git config info
+
+git status : View all changed in source
+git log : View all history of source
+
+git checkout  <existing_branch_name> : Use existing branch
+git checkout -b <new_branch_name> : Create new branch
+
+git branch : View all existing branch
+git branch -D : Delete current branch in git
+
+git commit -m "<description of current commit>" : Add comment and then commit before push to github
+git commit -m "<description of current commit> --amend" : Add comment and then override commit before push to github
+
+git push <branch_name> : Upload all changed in specifics branch name to github server
+git push -f <branch_name> : Override upload all changed in specifics branch name to github server
+git push -u origin master : Upload all changed in master branch to github server
+
+git submodule add <ssh|https git_repository_path> : Add submodule to current source
+git submodule update : Update and pull down latest submodule from github to current source
+git submodule rm <ssh|https git_repository_path> : Remove submodule from current source
